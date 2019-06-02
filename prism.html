@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="prism.css"/>
+    <script type='text/javascript' src="prism.js"></script>
+ 
+    <!-- <link rel="stylesheet" href="https://rawcdn.githack.com/suryakand/prism-code-highlighter/14d09de98fea02316b57c36a5a9d73da5f72e0ad/prism.css"/>
+    <script type='text/javascript' src="https://rawcdn.githack.com/suryakand/prism-code-highlighter/14d09de98fea02316b57c36a5a9d73da5f72e0ad/prism.js"></script> -->
+</head>
+
+<body>
+    <pre class='language-java'>
+        <code>
+            // Your Java Code here
+            import java.util.Scanner;
+
+            public class Life {
+            
+                @Override @Bind("One")
+                public void show(boolean[][] grid){
+                    String s = "";
+                    for(boolean[] row : grid){
+                        for(boolean val : row)
+                            if(val)
+                                s += "*";
+                            else
+                                s += ".";
+                        s += "\n";
+                    }
+                    System.out.println(s);
+                }
+            }
+        </pre>
+    </code>
+</body>
+</html>
